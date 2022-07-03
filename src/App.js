@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import PhotoPage from './components/PhotoPage';
+import Main from './Main';
+axios.defaults.baseURL = 'http://192.168.56.1:5000/api'
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/Main" element={<Main />} />
+        <Route path="/times" element={<PhotoPage />} />
+      </Routes>
+    </HashRouter>
+
   );
 }
 

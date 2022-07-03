@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +8,60 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body,html {
+  /* overflow-x: hidden; */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: local('Roboto-Light'), url(./assets/fonts/Roboto-Light.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: local('Roboto-Bold'), url(./assets/fonts/Roboto-Bold.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: local('Roboto-Regular'), url(./assets/fonts/Roboto-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'NotoSans-Bold';
+  src: local('NotoSans-Bold'), url(./assets/fonts/NotoSans-Bold.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'NotoSans-Light';
+  src: local('NotoSans-Light'), url(./assets/fonts/NotoSans-Light.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'NotoSans-Medium';
+  src: local('NotoSans-Medium'), url(./assets/fonts/NotoSans-Medium.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'NotoSans-Regular';
+  src: local('NotoSans-Regular'), url(./assets/fonts/NotoSans-Regular.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'NotoSans-SemiBold';
+  src: local('NotoSans-SemiBold'), url(./assets/fonts/NotoSans-SemiBold.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: local('Poppins-Bold'), url(./assets/fonts/Poppins-Bold.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'Poppins-Light';
+  src: local('Roboto-Light'), url(./assets/fonts/Poppins-Light.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: local('Roboto-Light'), url(./assets/fonts/Poppins-Regular.ttf) format('ttf');
 }
